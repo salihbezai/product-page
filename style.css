@@ -1,0 +1,164 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 13px 0px;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+.Navbar h2 {
+    color: hsl(220, 13%, 13%);
+}
+.part-one {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: hsl(220, 14%, 75%);
+    padding: 33px 0px;
+    
+}
+nav li a:hover {
+    transition: border .2s;
+    border-bottom: 5px solid hsl(26, 100%, 55%);
+    color: hsl(219, 9%, 45%);
+}
+
+.part-two {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.part-two .cart:hover svg > path {
+    fill: hsl(220, 13%, 13%);
+}
+
+.part-two .profile  img {
+    width: 40px;
+    height: 40px;
+}
+.part-two .profile  img:hover {
+
+    border-radius: 50%;
+    border: 2px solid hsl(26, 100%, 55%);
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 0 135px;
+    margin-top: 100px;
+}
+
+.left-content{
+    flex: 1;
+}
+.left-content .image img{
+    border-radius: 10px;
+}
+
+.thumbnails{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 400px;
+    margin-top: 30px;
+    gap: 10px;
+}
+.thumbnails img{
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+.right-content{
+    flex: 1;
+}
+
+.company-title h4{
+    color: hsl(26, 100%, 55%);
+}
+
+.product-title{
+    font-size: 3rem;
+    width: 80%;
+}
+
+.product-details p {
+    width: 80%;
+    color: hsl(220, 14%, 75%);
+}
+
+.price-details {
+    display: flex;
+    gap: 4rem;
+}
+
+.discount{
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+}
+
+.old-price h3{
+    margin: 0;
+    text-decoration: line-through;
+    color: hsl(220, 14%, 75%);
+}
+
+.add-to-cart{
+    display: flex;
+}
+.control-quantity{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+}
+
+.minus{
+    color: hsl(26, 100%, 55%);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.quantity{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.add-to-cart button {
+    flex: 2;
+    background-color:hsl(26, 100%, 55%) ;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+
+}
+.add-to-cart button svg path{
+    fill: #fff;
+}
